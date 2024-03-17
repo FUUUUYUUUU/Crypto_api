@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userId\" : \"67c76a5a-cdb4-4245-9cd0-9839c2b1b0e7\",\r\n    \"orderType\" : \"Sell\",\r\n    \"currencyId\" : \"4da5ae56-4566-47b0-bfb0-c1a3e7cf1e77\",\r\n    \"amount\": 10,\r\n    \"price\" : 4\r\n}",
+					"raw": "{\r\n    \"userId\" : \"08ddc4d7-c732-4f25-9fd7-91c0e4b38869\",\r\n    \"orderType\" : \"Buy\",\r\n    \"currencyId\" : \"4da5ae56-4566-47b0-bfb0-c1a3e7cf1e77\",\r\n    \"amount\": 0.5,\r\n    \"price\" : 13\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -41,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"username\": \"johntechup\",\r\n\t\"password\": \"johnpassword\",\r\n\t\"firstName\": \"John\",\r\n\t\"lastName\": \"Doe\"\r\n}",
+					"raw": "{\r\n    \"userId\" : \"67c76a5a-cdb4-4245-9cd0-9839c2b1b0e7\",\r\n    \"orderType\" : \"Sell\",\r\n    \"currencyId\" : \"4da5ae56-4566-47b0-bfb0-c1a3e7cf1e77\",\r\n    \"amount\": 4,\r\n    \"price\" : 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,15 +49,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/auth/register",
+					"raw": "http://localhost:4000/order",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"auth",
-						"register"
+						"order"
 					]
 				}
 			},
@@ -105,7 +104,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"userId\" : \"67c76a5a-cdb4-4245-9cd0-9839c2b1b0e7\",\r\n    \"amount\" : 1000\r\n}",
+					"raw": "{\r\n\t\"userId\" : \"67c76a5a-cdb4-4245-9cd0-9839c2b1b0e7\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -113,7 +112,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/user/deposit",
+					"raw": "http://localhost:4000/user/wallets",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -121,7 +120,7 @@
 					"port": "4000",
 					"path": [
 						"user",
-						"deposit"
+						"wallets"
 					]
 				}
 			},
@@ -137,7 +136,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"userId\" : \"67c76a5a-cdb4-4245-9cd0-9839c2b1b0e7\",\r\n    \"amount\" : 1000\r\n}",
+					"raw": "{\r\n\t\"userId\" : \"67c76a5a-cdb4-4245-9cd0-9839c2b1b0e7\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -145,7 +144,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/user/deposit",
+					"raw": "http://localhost:4000/user/transactions",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -153,7 +152,7 @@
 					"port": "4000",
 					"path": [
 						"user",
-						"deposit"
+						"transactions"
 					]
 				}
 			},
@@ -166,7 +165,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"username\": \"johntechup\",\r\n\t\"password\": \"johnpassword\",\r\n\t\"firstName\": \"John\",\r\n\t\"lastName\": \"Doe\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
