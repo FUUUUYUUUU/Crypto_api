@@ -1,6 +1,8 @@
 ## Project Overview
 This project involves creating an ERD diagram to simulate a cryptocurrency database and developing an API compatible with standard crypto websites. This includes functionalities such as registration, creating buy/sell orders, depositing cash, viewing transactions, and accessing user wallets.
 
+***Due to this is a mocking project for the convenience of use, I will not put the ".env" file in the gitignore.
+
 ## Get started
 1. Clone this project
 2. Install the dependencies with the command "npm install"
