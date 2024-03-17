@@ -3,6 +3,10 @@ This project involves creating an ERD diagram to simulate a cryptocurrency datab
 
 ***Due to this is a mocking project for the convenience of use, I will not put the ".env" file in the gitignore.
 
+## Database
+- The database was designed and created with Supabase
+- Some of dummy data was prepared
+
 ## Get started
 1. Clone this project
 2. Install the dependencies with the command "npm install"
