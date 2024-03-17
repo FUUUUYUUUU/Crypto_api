@@ -6,4 +6,5 @@ This project involves creating an ERD diagram to simulate a cryptocurrency datab
 
 ##ERD
 there are 5 main tables in this database
+
 **1. Currencies**
