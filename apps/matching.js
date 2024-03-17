@@ -110,6 +110,7 @@ matchingRounter.put("/", async function (req, res) {
           ]);
         } else {
           buyOrderAmount = buyOrderAmount - sellOrders[j].amount;
+          buyerWallet[0].balance = buyerWallet[0].balance + sellOrders[j].amount 
           const status = buyOrderAmount === 0 ? "Closed" : "Open";
 
           //update buy order status
@@ -127,7 +128,7 @@ matchingRounter.put("/", async function (req, res) {
           //update buyer wallet
           await supabase
             .from("wallets")
-            .update({ balance: buyerWallet[0].balance + sellOrders[j].amount })
+            .update({ balance: buyerWallet[0].balance})
             .eq("user_id", buyOrders[i].user_id)
             .eq("currency_id", buyOrders[i].currency_id);
 
