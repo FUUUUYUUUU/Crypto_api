@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-import authRounter from "./apps/auth.js";
-import orderRounter from "./apps/order.js";
-import matchingRounter from "./apps/matching.js";
+import authRouter from "./apps/auth.js";
+import orderRouter from "./apps/order.js";
+import matchingRouter from "./apps/matching.js";
 import userRouter from "./apps/user.js";
 
 async function init() {
@@ -18,9 +18,9 @@ async function init() {
     res.send("Hello DTs");
   });
 
-  app.use("/auth", authRounter);
-  app.use("/order", orderRounter);
-  app.use("/matching", matchingRounter)
+  app.use("/auth", authRouter);
+  app.use("/order", orderRouter);
+  app.use("/matching", matchingRouter)
   app.use("/user",userRouter)
 
   app.listen(port, () => {

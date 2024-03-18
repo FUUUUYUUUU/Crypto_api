@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { supabase } from "../utils/db.js";
 
-const matchingRounter = Router();
+const matchingRouter = Router();
 
-matchingRounter.put("/", async function (req, res) {
+matchingRouter.put("/", async function (req, res) {
   try {
     //get buy orders
     let { data: buyOrders } = await supabase
@@ -175,4 +175,4 @@ matchingRounter.put("/", async function (req, res) {
   }
 });
 
-export default matchingRounter;
+export default matchingRouter;
